@@ -160,3 +160,16 @@ allprojects {
     }
 }
 
+buildscript{
+  repositories{
+    maven {
+      url uri('/repo')
+    }
+  }
+  dependencies {
+    classpath group: 'pt.PS.RuiDTLima', name: 'OSDA-plugin',
+              version: '1.0-SNAPSHOT'
+  }
+}
+
+apply plugin: 'pt.PS.RuiDTLima.OSDA-plugin'
