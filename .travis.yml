@@ -5,6 +5,6 @@ before_script: ulimit -u 30000
 before_install:
  - chmod +x gradlew
 install: ./gradlew check
-script: ./gradlew fatJar
+script: ./gradlew
 notifications:
   slack: datamountaineers:gpg5e7VabFjAT1gQZqwxgsqP
