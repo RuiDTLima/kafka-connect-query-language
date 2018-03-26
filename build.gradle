@@ -163,7 +163,7 @@ allprojects {
 buildscript{
   repositories{
     maven {
-      url uri('/repo')
+      url uri('repo')
     }
   }
   dependencies {
